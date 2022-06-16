@@ -28,7 +28,7 @@ app.use(express.json());
 app.use(middleware.requestLogger);
 
 app.use("/info", infoRouter);
-app.use("/api/notes", peopleRouter);
+app.use("/api/persons", peopleRouter);
 
 app.use(middleware.unknownEndpoint);
 app.use(middleware.errorHandler);
